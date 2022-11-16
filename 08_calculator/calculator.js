@@ -30,7 +30,17 @@ const power = function (base, exponent) {
   return result;
 };
 
-const factorial = function () {};
+const factorial = function (number) {
+  if (number === 0) {
+    return 1;
+  } else {
+    let result = 1;
+    for (let i = number; i > 1; i--) {
+      result *= i;
+    }
+    return result;
+  }
+};
 
 // Do not edit below this line
 module.exports = {
