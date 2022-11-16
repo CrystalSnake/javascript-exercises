@@ -1,14 +1,26 @@
 const add = function (firstOp, secondOp) {
-  if (typeof firstOp === 'number') {
-    return firstOp + secondOp;
-  }
+  return firstOp + secondOp;
 };
 
-const subtract = function () {};
+const subtract = function (firstOp, secondOp) {
+  return firstOp - secondOp;
+};
 
-const sum = function () {};
+const sum = function (arrayForSum) {
+  let sum = 0;
+  for (let number in arrayForSum) {
+    sum += arrayForSum[number];
+  }
+  return sum;
+};
 
-const multiply = function () {};
+const multiply = function (arrayForMulti) {
+  let result = 1;
+  for (let number in arrayForMulti) {
+    result *= arrayForMulti[number];
+  }
+  return result;
+};
 
 const power = function () {};
 
